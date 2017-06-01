@@ -35,6 +35,9 @@ lynx -source rawgit.com/transcode-open/apt-cyg/master/apt-cyg > apt-cyg
 install apt-cyg /bin
 ```
 
+## Prepare Node For pulsemicro systems
+Sudo apt-get install python Ssh-copy-id pulse@ # From Server Requirements for Windows Node http://docs.ansible.com/ansible/intro_windows.html
+
 ## For pulsemicro systems to download ansible repository
 Steps:
 1. nano install.sh (copy and paste or download file or even type this out)
