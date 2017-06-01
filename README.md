@@ -11,3 +11,6 @@ Run from Powershell
 Run from cmd with
 
 `powershell -ExecutionPolicy bypass "ansible-cygwin-installer.ps1"`
+
+This package installs:
+wget, git, nano, lynx, curl, python, git, vim, openssh, openssl, openssh-devel, libsasl2, ca-certificates, python-crypto, python-openssl, python-setuptools, dash, rebase
