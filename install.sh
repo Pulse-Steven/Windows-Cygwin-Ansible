@@ -1,5 +1,8 @@
 #!/bin/bash
 #Script to download and install Ansible for self configuration
+pip install "pywinrm>=0.2.2" -y
+pip install pywinrm[credssp] -y
+pip install boto -y
 ssh-keygen
 sudo mkdir pulsemicro
 cd pulsemicro
