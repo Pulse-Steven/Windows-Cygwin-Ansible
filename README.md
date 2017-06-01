@@ -1,4 +1,3 @@
-
 # Read Me
 
 A Linux control machine is required to manage Windows hosts.
@@ -35,7 +34,7 @@ lynx -source rawgit.com/transcode-open/apt-cyg/master/apt-cyg > apt-cyg
 install apt-cyg /bin
 ```
 
-## Prepare Node For pulsemicro systems
+## Prepare Node For pulsemicro systems on powershell
 Sudo apt-get install python Ssh-copy-id pulse@ # From Server Requirements for Windows Node http://docs.ansible.com/ansible/intro_windows.html
 
 ## For pulsemicro systems to download ansible repository
