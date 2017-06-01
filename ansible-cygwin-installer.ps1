@@ -45,7 +45,7 @@ if ( ! ( Test-Path -Path $cygwinSetupPath -PathType Leaf ) ) {
     $webclient.DownloadFile($url,$file)
 }
 
-$cygwinSetupArgs = '--no-admin', '-q', '-R', "$cygwinHome", '-s', "$cygwinMirror", '--packages="wget,git,nano,lynx,curl,python,git,vim,openssh,openssl,openssh-devel,libsasl2,ca-certificates,python-crypto,python-openssl,python-setuptools,dash,rebase"'
+$cygwinSetupArgs = '--no-admin', '-q', '-R', "$cygwinHome", '-s', "$cygwinMirror", '--packages="wget,gcc-g++,libffi-devel,git,nano,lynx,curl,python,git,vim,openssh,openssl,openssh-devel,libsasl2,ca-certificates,python-crypto,python-openssl,python-setuptools,dash,rebase"'
 Start-Process -FilePath $cygwinSetupPath -ArgumentList $cygwinSetupArgs -Wait
 
 # Add cygwin bin dir to path
