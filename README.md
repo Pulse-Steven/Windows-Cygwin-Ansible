@@ -41,7 +41,7 @@ Steps:
 
 ```
 #!/bin/bash
-#Script to download and install Ansible for self configuration
+#Script to download pulsemicro repository ansible
 ssh-keygen
 sudo mkdir pulsemicro
 cd pulsemicro
@@ -49,3 +49,6 @@ git clone https://github.com/pulsemicro/ansible.git
 git config --global user.name "username"
 cd ansible
 ```
+2. Write out and exit
+3. Run the bash shell script ". install.sh"
+4. Run command "ansible-playbook -i localhost -k 31rendertest.yml"
