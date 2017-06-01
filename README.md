@@ -1,3 +1,4 @@
+
 # Read Me
 
 A Linux control machine is required to manage Windows hosts.
@@ -15,6 +16,7 @@ Run from Powershell
 ```
 Set-ExecutionPolicy bypass
 & ansible-cygwin-installer.ps1
+or ./ansible-cygwin-installer.ps1
 ```
 
 Run from cmd with
