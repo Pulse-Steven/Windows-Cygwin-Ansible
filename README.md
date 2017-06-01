@@ -20,5 +20,4 @@ wget, gcc-g++, libffi-devel, git, nano, lynx, curl, python, git, vim, openssh, o
 Open Cygwin Terminal:
 
 `lynx -source rawgit.com/transcode-open/apt-cyg/master/apt-cyg > apt-cyg
-
 install apt-cyg /bin`
