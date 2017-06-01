@@ -13,12 +13,16 @@ This Powershell script will download and install Cygwin and Ansible. Since Ansib
 
 Run from Powershell
 
-`Set-ExecutionPolicy bypass
-& ansible-cygwin-installer.ps1`
+```
+Set-ExecutionPolicy bypass
+& ansible-cygwin-installer.ps1
+```
 
 Run from cmd with
 
-`powershell -ExecutionPolicy bypass "ansible-cygwin-installer.ps1"`
+```
+powershell -ExecutionPolicy bypass "ansible-cygwin-installer.ps1"`
+```
 
 ## This package installs:
 
@@ -26,24 +30,22 @@ wget, gcc-g++, libffi-devel, git, nano, lynx, curl, python, git, vim, openssh, o
 
 ## Open Cygwin Terminal:
 
-`lynx -source rawgit.com/transcode-open/apt-cyg/master/apt-cyg > apt-cyg
-install apt-cyg /bin`
+```
+lynx -source rawgit.com/transcode-open/apt-cyg/master/apt-cyg > apt-cyg
+install apt-cyg /bin
+```
 
 ## For pulsemicro systems to download ansible repository
 Steps:
 1. nano install.sh (copy and paste or download file or even type this out)
 
-`#!/bin/bash
-
+```
+#!/bin/bash
 #Script to download and install Ansible for self configuration
 ssh-keygen
-
 sudo mkdir pulsemicro
-
 cd pulsemicro
-
 git clone https://github.com/pulsemicro/ansible.git
-
 git config --global user.name "username"
-
-cd ansible`
+cd ansible
+```
