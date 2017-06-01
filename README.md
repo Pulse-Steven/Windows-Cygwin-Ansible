@@ -7,7 +7,6 @@ This Powershell script will download and install Cygwin and Ansible. Since Ansib
 Run from Powershell
 
 `Set-ExecutionPolicy bypass
-
 & ansible-cygwin-installer.ps1`
 
 Run from cmd with
