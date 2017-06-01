@@ -43,7 +43,10 @@ Steps:
 
 ```
 #!/bin/bash
-#Script to download pulsemicro repository ansible
+#Script to download and install Ansible for self configuration
+pip install "pywinrm>=0.2.2" 
+pip install pywinrm[credssp] 
+pip install boto 
 ssh-keygen
 sudo mkdir pulsemicro
 cd pulsemicro
@@ -53,4 +56,4 @@ cd ansible
 ```
 2. Write out and exit
 3. Run the bash shell script ". install.sh"
-4. Run command "ansible-playbook -i localhost -k 31rendertest.yml"
+4. Run command "ansible-playbook -i local/hosts 31rendertest.yml --ask-vault-pass"
